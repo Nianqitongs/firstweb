@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿彤的时光画廊 - 时光轴</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">阿彤的时光画廊</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="timeline.html" class="nav-link active">时光轴</a>
+                <a href="gallery.html" class="nav-link">全部展品</a>
+                <a href="about.html" class="nav-link">关于</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 时光轴页面 -->
+    <div class="timeline-container">
+        <h1 class="timeline-title">时光轴</h1>
+
+        <!-- 横向时光轴 -->
+        <div class="timeline-horizontal" id="timelineContainer">
+
+    <div class="memory-capsule fade-in" data-folder="01_合照" data-title="「光影之约」合照集">
+        <div class="capsule-image">
+            <img data-src="时光画廊/01_合照/051A8523 拷贝.jpg" alt="「光影之约」合照集" class="lazy">
+        </div>
+        <div class="capsule-info">
+            <div class="capsule-date">2024.09.19</div>
+            <div class="capsule-location">「光影之约」合照集</div>
+        </div>
+    </div>
+    
+    <div class="memory-capsule fade-in" data-folder="02_生日照" data-title="「生辰私语」纪念集">
+        <div class="capsule-image">
+            <img data-src="时光画廊/02_生日照/生日照1.jpg" alt="「生辰私语」纪念集" class="lazy">
+        </div>
+        <div class="capsule-info">
+            <div class="capsule-date">2022.07.12</div>
+            <div class="capsule-location">「生辰私语」纪念集</div>
+        </div>
+    </div>
+    
+    <div class="memory-capsule fade-in" data-folder="03_日常漂亮饭" data-title="「食光流转」美食记">
+        <div class="capsule-image">
+            <img data-src="时光画廊/03_日常漂亮饭/日常1.jpg" alt="「食光流转」美食记" class="lazy">
+        </div>
+        <div class="capsule-info">
+            <div class="capsule-date">2024.12.26</div>
+            <div class="capsule-location">「食光流转」美食记</div>
+        </div>
+    </div>
+    
+    <div class="memory-capsule fade-in" data-folder="04_云南旅游" data-title="「滇行漫记」游记">
+        <div class="capsule-image">
+            <img data-src="时光画廊/04_云南旅游/旅游3.jpg" alt="「滇行漫记」游记" class="lazy">
+        </div>
+        <div class="capsule-info">
+            <div class="capsule-date">2024.08.28</div>
+            <div class="capsule-location">「滇行漫记」游记</div>
+        </div>
+    </div>
+    
+    <div class="memory-capsule fade-in" data-folder="05_日常美照" data-title="「日常拾光」美人记">
+        <div class="capsule-image">
+            <img data-src="时光画廊/05_日常美照/日常美照3.jpg" alt="「日常拾光」美人记" class="lazy">
+        </div>
+        <div class="capsule-info">
+            <div class="capsule-date">2025.04.28</div>
+            <div class="capsule-location">「日常拾光」美人记</div>
+        </div>
+    </div>
+    
+    <div class="memory-capsule fade-in" data-folder="06_日常自拍" data-title="「镜中絮语」自画像">
+        <div class="capsule-image">
+            <img data-src="时光画廊/06_日常自拍/日常1.jpg" alt="「镜中絮语」自画像" class="lazy">
+        </div>
+        <div class="capsule-info">
+            <div class="capsule-date">2025.06.19</div>
+            <div class="capsule-location">「镜中絮语」自画像</div>
+        </div>
+    </div>
+    
+    <div class="memory-capsule fade-in" data-folder="07_毕业照" data-title="「韶华似锦」毕业季">
+        <div class="capsule-image">
+            <img data-src="时光画廊/07_毕业照/毕业照1.jpg" alt="「韶华似锦」毕业季" class="lazy">
+        </div>
+        <div class="capsule-info">
+            <div class="capsule-date">2022.07.19</div>
+            <div class="capsule-location">「韶华似锦」毕业季</div>
+        </div>
+    </div>
+    
+        </div>
+    </div>
+
+    <!-- 双联画对比区 -->
+    <div class="diptych-zone hidden" id="diptychZone">
+        <div class="diptych-item">
+            <div class="diptych-slot" id="diptychSlot1" data-filled="false">
+                <h3>第一张照片</h3>
+                <img src="" alt="第一张照片" class="diptych-image">
+                <div class="diptych-info">
+                    <div class="diptych-date">--</div>
+                    <div class="diptych-emotion">--</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="diptych-item">
+            <div class="diptych-slot" id="diptychSlot2" data-filled="false">
+                <h3>第二张照片</h3>
+                <img src="" alt="第二张照片" class="diptych-image">
+                <div class="diptych-info">
+                    <div class="diptych-date">--</div>
+                    <div class="diptych-emotion">--</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="diptych-actions">
+            <button class="share-button" id="shareButton">📤 分享对比图</button>
+        </div>
+    </div>
+
+    <!-- 背景音乐控制 -->
+    <div class="bgm-control">
+        <button id="bgmToggle" class="bgm-button">🎵 背景音乐</button>
+        <audio id="bgmAudio" loop src="蜷花仕女 - Kiss me Kiss me.mp3">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+
+
+<style>
+.gallery-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.6); /* 半透明白色背景 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: rgba(248, 245, 240, 0.95); /* 半透明米白 */
+    backdrop-filter: blur(5px); /* 内容区域也添加轻微毛玻璃效果 */
+    margin: 5% auto;
+    padding: 30px;
+    width: 85%;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3); /* 更柔和的阴影 */
+    animation: slideUp 0.3s ease;
+}
+
+.close-modal {
+    color: var(--text-primary);
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+    color: var(--accent-color);
+    transform: rotate(180deg);
+}
+
+#modalTitle {
+    font-family: var(--serif-font);
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+.modal-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px; /* 减小间距 */
+    padding: 15px 0; /* 减小上下内边距 */
+}
+
+.modal-gallery img {
+    width: 100%;
+    height: auto; /* 自适应高度，保持原始比例 */
+    max-height: 350px; /* 增加最大高度，减少留白 */
+    object-fit: contain; /* 完整显示图片 */
+    object-position: center; /* 居中显示 */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 更精致的阴影 */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: transparent; /* 透明背景 */
+    padding: 0; /* 移除内边距 */
+    margin: 0 auto; /* 居中图片 */
+    display: block; /* 块级显示 */
+}
+
+.modal-gallery img:hover {
+    transform: translateY(-3px) scale(1.02); /* 更微妙的悬停效果 */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 10% auto;
+        width: 95%;
+        padding: 20px;
+    }
+
+    #modalTitle {
+        font-size: 1.8rem;
+    }
+
+    .modal-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .modal-gallery img {
+        height: 150px;
+    }
+}
+
+/* 时光轴节点动画和样式 */
+.memory-capsule {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.memory-capsule::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.memory-capsule:hover::before {
+    opacity: 1;
+}
+
+.memory-capsule:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.capsule-info {
+    padding: 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 0 0 8px 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.capsule-date {
+    font-family: var(--serif-font);
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.capsule-location {
+    font-family: var(--serif-font);
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* 时光轴节点加载动画 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.memory-capsule.fade-in {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* 记忆胶囊高光装饰 */
+.memory-capsule::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(212,184,140,0.3) 50%, transparent 100%);
+    border-radius: 50%;
+    filter: blur(8px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.memory-capsule:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+    width: 30px;
+    height: 30px;
+}
+
+/* 记忆胶囊内层高光 */
+.memory-capsule .capsule-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.memory-capsule:hover .capsule-image::after {
+    opacity: 1;
+    width: 120px;
+    height: 120px;
+}
+
+/* 时光轴背景光影 */
+.timeline-horizontal {
+    position: relative;
+}
+
+.timeline-horizontal::after {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, transparent 0%, rgba(212,184,140,0.1) 50%, transparent 100%);
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+/* 时光轴装饰元素 */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, var(--accent-color) 50%, transparent 100%);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* 记忆胶囊图片旋转效果 */
+.memory-capsule:hover .capsule-image {
+    animation: capsuleRotate 0.6s ease;
+}
+
+@keyframes capsuleRotate {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+/* 时光轴标题优雅动画 */
+.timeline-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: var(--accent-color);
+    animation: titleLine 1s ease-out forwards;
+}
+
+@keyframes titleLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100px;
+    }
+}
+
+.memory-capsule:nth-child(1) { animation-delay: 0.1s; }
+.memory-capsule:nth-child(2) { animation-delay: 0.2s; }
+.memory-capsule:nth-child(3) { animation-delay: 0.3s; }
+.memory-capsule:nth-child(4) { animation-delay: 0.4s; }
+.memory-capsule:nth-child(5) { animation-delay: 0.5s; }
+.memory-capsule:nth-child(6) { animation-delay: 0.6s; }
+.memory-capsule:nth-child(7) { animation-delay: 0.7s; }
+
+/* 悬停时的文字动画 */
+.memory-capsule:hover .capsule-location {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: textShine 2s ease-in-out infinite;
+}
+
+@keyframes textShine {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* 漂浮气泡效果 */
+.bubble {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9) 0%, rgba(212,184,140,0.5) 50%, transparent 100%);
+    border-radius: 50%;
+    pointer-events: all;
+    cursor: pointer;
+    opacity: 0.7;
+    filter: blur(2px);
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.bubble:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* 气泡飘动动画 */
+@keyframes bubbleFloat {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0.7;
+    }
+    25% {
+        transform: translateX(20px) translateY(-20px);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateX(0) translateY(-40px);
+        opacity: 0.9;
+    }
+    75% {
+        transform: translateX(-20px) translateY(-20px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+        opacity: 0.7;
+    }
+}
+
+/* 气泡破碎动画 */
+@keyframes bubbleBurst {
+    0% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.bubble.burst {
+    animation: bubbleBurst 0.5s ease forwards;
+}
+
+/* 水花溅射效果 */
+.splash-particle {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: rgba(212, 184, 140, 0.9);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+@keyframes splash {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0) translate(var(--dx), var(--dy));
+        opacity: 0;
+    }
+}
+</style>
+
+
+
+    <!-- 图片画廊弹窗 -->
+    <div id="galleryModal" class="gallery-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div class="modal-gallery" id="modalGallery">
+                <!-- 图片将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </div>
+
+<script>
+// 时光轴图片数据
+const timelineImageData = {"01_合照": ["时光画廊/01_合照/051A8523 拷贝.jpg", "时光画廊/01_合照/051A8554 拷贝.jpg", "时光画廊/01_合照/051A8570 拷贝.jpg", "时光画廊/01_合照/051A8615 拷贝.jpg", "时光画廊/01_合照/051A8620 拷贝.jpg", "时光画廊/01_合照/051A8625 拷贝.jpg", "时光画廊/01_合照/051A8633 拷贝.jpg", "时光画廊/01_合照/051A8637 拷贝.jpg", "时光画廊/01_合照/051A8652 拷贝.jpg", "时光画廊/01_合照/051A8672 拷贝.jpg"], "02_生日照": ["时光画廊/02_生日照/生日照1.jpg", "时光画廊/02_生日照/生日照2.jpg", "时光画廊/02_生日照/生日照3.jpg", "时光画廊/02_生日照/生日照4.jpg", "时光画廊/02_生日照/生日照5.jpg", "时光画廊/02_生日照/生日照6.jpg", "时光画廊/02_生日照/生日照7.jpg", "时光画廊/02_生日照/生日照8.jpg"], "03_日常漂亮饭": ["时光画廊/03_日常漂亮饭/日常1.jpg", "时光画廊/03_日常漂亮饭/日常2.jpg", "时光画廊/03_日常漂亮饭/日常3.jpg", "时光画廊/03_日常漂亮饭/日常4.jpg"], "04_云南旅游": ["时光画廊/04_云南旅游/旅游1.jpg", "时光画廊/04_云南旅游/旅游2.jpg", "时光画廊/04_云南旅游/旅游3.jpg", "时光画廊/04_云南旅游/旅游4.jpg", "时光画廊/04_云南旅游/旅游5.jpg", "时光画廊/04_云南旅游/旅游6.png"], "05_日常美照": ["时光画廊/05_日常美照/日常美照1.jpg", "时光画廊/05_日常美照/日常美照2.jpg", "时光画廊/05_日常美照/日常美照3.jpg", "时光画廊/05_日常美照/日常美照4.jpg", "时光画廊/05_日常美照/日常美照5.jpg", "时光画廊/05_日常美照/日常美照6.jpg", "时光画廊/05_日常美照/日常美照7.jpg", "时光画廊/05_日常美照/日常美照8.jpg"], "06_日常自拍": ["时光画廊/06_日常自拍/日常1.jpg", "时光画廊/06_日常自拍/日常2.jpg", "时光画廊/06_日常自拍/日常3.jpg", "时光画廊/06_日常自拍/日常4.jpg", "时光画廊/06_日常自拍/日常5.jpg", "时光画廊/06_日常自拍/日常6.jpg", "时光画廊/06_日常自拍/日常7.jpg", "时光画廊/06_日常自拍/日常8.jpg"], "07_毕业照": ["时光画廊/07_毕业照/毕业照1.jpg", "时光画廊/07_毕业照/毕业照2.jpg", "时光画廊/07_毕业照/毕业照3.jpg", "时光画廊/07_毕业照/毕业照4.jpg", "时光画廊/07_毕业照/毕业照5.jpg", "时光画廊/07_毕业照/毕业照6.jpg", "时光画廊/07_毕业照/毕业照7.jpg", "时光画廊/07_毕业照/毕业照8.jpg"]};
+
+// 初始化画廊模态框
+function initGalleryModal() {
+    const modal = document.getElementById('galleryModal');
+    const closeBtn = document.querySelector('.close-modal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalGallery = document.getElementById('modalGallery');
+
+    // 点击记忆胶囊打开模态框
+    document.querySelectorAll('.memory-capsule').forEach(capsule => {
+        capsule.addEventListener('click', () => {
+            const folder = capsule.dataset.folder;
+            const title = capsule.dataset.title;
+
+            // 设置标题
+            modalTitle.textContent = title;
+
+            // 加载图片
+            const images = timelineImageData[folder] || [];
+            modalGallery.innerHTML = '';
+
+            if (images.length > 0) {
+                images.forEach(imageUrl => {
+                    const img = document.createElement('img');
+                    img.src = imageUrl;
+                    img.alt = title;
+                    modalGallery.appendChild(img);
+                });
+            } else {
+                modalGallery.innerHTML = '<p style="text-align: center; padding: 50px 0; color: var(--text-secondary);">该相册暂无照片</p>';
+            }
+
+            // 显示模态框
+            modal.style.display = 'block';
+        });
+    });
+
+    // 关闭模态框
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // 点击外部关闭
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+}
+
+// 创建漂浮气泡
+function createBubbles() {
+    const bubbleCount = 15;
+    
+    for (let i = 0; i < bubbleCount; i++) {
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble';
+        
+        // 随机位置
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+        bubble.style.left = x + 'px';
+        bubble.style.top = y + 'px';
+        
+        // 随机大小
+        const size = 15 + Math.random() * 30;
+        bubble.style.width = size + 'px';
+        bubble.style.height = size + 'px';
+        
+        // 随机动画延迟
+        const delay = Math.random() * 5;
+        bubble.style.animationDelay = delay + 's';
+        
+        // 添加点击事件
+        bubble.addEventListener('click', () => {
+            // 创建水花溅射效果
+            const particleCount = 12;
+            const bubbleRect = bubble.getBoundingClientRect();
+            const centerX = bubbleRect.left + bubbleRect.width / 2;
+            const centerY = bubbleRect.top + bubbleRect.height / 2;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const angle = (i / particleCount) * Math.PI * 2;
+                const distance = 30 + Math.random() * 30;
+                const dx = Math.cos(angle) * distance;
+                const dy = Math.sin(angle) * distance;
+                
+                const particle = document.createElement('div');
+                particle.className = 'splash-particle';
+                particle.style.left = centerX + 'px';
+                particle.style.top = centerY + 'px';
+                particle.style.setProperty('--dx', dx + 'px');
+                particle.style.setProperty('--dy', dy + 'px');
+                particle.style.animation = 'splash 0.4s ease forwards';
+                
+                document.body.appendChild(particle);
+                
+                // 动画结束后移除粒子
+                setTimeout(() => particle.remove(), 400);
+            }
+            
+            bubble.classList.add('burst');
+            setTimeout(() => {
+                bubble.remove();
+            }, 500);
+        });
+        
+        document.body.appendChild(bubble);
+        
+        // 缓慢飘动动画
+        const floatDuration = 10 + Math.random() * 10;
+        bubble.style.animation = `bubbleFloat ${floatDuration}s ease-in-out infinite`;
+    }
+}
+
+// 页面加载完成后初始化
+document.addEventListener('DOMContentLoaded', () => {
+    initGalleryModal();
+    createBubbles();
+});
+</script>
+</body>
+</html>

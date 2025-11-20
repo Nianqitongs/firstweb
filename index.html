@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿彤的时光画廊 - The Atong Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">阿彤的时光画廊</a>
+            <div class="nav-links">
+                <a href="#" class="nav-link active">首页</a>
+                <a href="timeline.html" class="nav-link">时光轴</a>
+                <a href="gallery.html" class="nav-link">全部展品</a>
+                <a href="about.html" class="nav-link">关于</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 画廊大厅（首页） -->
+    <section class="gallery-hall">
+        <!-- 开场短片 -->
+        <div class="intro-video" id="introVideo">
+            <!-- 这里可以后期添加自动播放的无声短片 -->
+        </div>
+
+        <!-- 静态封面 -->
+        <div class="cover-image" id="coverImage">
+            <img src="时光画廊/02_生日照/生日照8.jpg" alt="阿彤的时光" class="main-cover">
+            <div class="cover-text">
+                <h1 class="gallery-title">阿彤的时光画廊</h1>
+                <p class="sub-title">Welcome to Atong's Time</p>
+                <button class="enter-button" id="enterButton">开始参观</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 背景音乐控制 -->
+    <div class="bgm-control">
+        <button id="bgmToggle" class="bgm-button">🎵 背景音乐</button>
+        <audio id="bgmAudio" loop src="蜷花仕女 - Kiss me Kiss me.mp3">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
